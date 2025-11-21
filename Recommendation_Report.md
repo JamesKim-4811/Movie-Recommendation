@@ -21,11 +21,11 @@ The MovieLens 100K dataset (ml-100k) is used. It contains 943 users, 1,682 movie
 
 #### **5. Results and Evaluation**
 - Example outputs (representative):
-  ![User Based](Movie-Recommendation/images/user-cf.png "User-based")
+  ![User Based](images/user-cf.png "User-based")
   - User-based: recommend_movies_for_user(10, num=5) → top 5 movie titles recommended by similar users.
-  ![Item Based](Movie-Recommendation/images/item-cf.png "Item-based")
+  ![Item Based](images/item-cf.png "Item-based")
   - Item-based: recommend_movies("Jurassic Park (1993)", num=5) → 5 most similar movies by cosine similarity.
-  ![Pixie random-walk](Movie-Recommendation/images/pixie.png "Pixie random-walk")
+  ![Pixie random-walk](images/pixie.png "Pixie random-walk")
   - Pixie random-walk: weighted_pixie_recommend("Jurassic Park (1993)", walk_length=100, num=5, seed=42) → top movies ranked by visit counts.
 - Comparison:
   - User-based CF personalizes well when users have rich rating histories, but suffers from sparsity and cold-start users.
